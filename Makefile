@@ -19,3 +19,4 @@ docker-up:
 
 help:
 	@echo "NexaAI: make install|test|backend|frontend|docker-up"
+
