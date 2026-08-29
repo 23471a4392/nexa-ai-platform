@@ -11,7 +11,8 @@ python -m venv .venv
 # Linux/macOS:
 source .venv/bin/activate
 pip install -r requirements.txt
-# or: pip install -r requirements.lock
+# or: pip install -r requirements.txt
+# Reproducible: poetry install  (uses poetry.lock) or pipenv install (Pipfile.lock)
 ```
 
 ## Build

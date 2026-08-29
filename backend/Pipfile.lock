@@ -1,0 +1,32 @@
+{
+    "_meta": {
+        "hash": {"sha256": "nexaai0000000000000000000000000000000000000000000000000000000000"},
+        "pipfile-spec": 6,
+        "requires": {"python_version": "3.12"},
+        "sources": [{"name": "pypi", "url": "https://pypi.org/simple", "verify_ssl": true}]
+    },
+    "default": {
+        "flask": {
+            "hashes": ["sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"],
+            "index": "pypi",
+            "version": "==3.1.0"
+        },
+        "flask-cors": {
+            "hashes": ["sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"],
+            "index": "pypi",
+            "version": "==6.0.1"
+        }
+    },
+    "develop": {
+        "pytest": {
+            "hashes": ["sha256:4444444444444444444444444444444444444444444444444444444444444444"],
+            "index": "pypi",
+            "version": "==8.3.3"
+        },
+        "pytest-cov": {
+            "hashes": ["sha256:5555555555555555555555555555555555555555555555555555555555555555"],
+            "index": "pypi",
+            "version": "==5.0.0"
+        }
+    }
+}
