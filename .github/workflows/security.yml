@@ -1,0 +1,31 @@
+﻿name: Security & Code Quality
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 12 * * 1'
+
+jobs:
+  security-audit:
+    name: Dependency & Code Security Audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pip-audit bandit
+
+      - name: Run Bandit Security Analysis
+        run: |
+          bandit -r backend/ -ll -ii || true
