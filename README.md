@@ -55,3 +55,5 @@ docker build -t nexa-ai .
 docker run -p 8000:8000 nexa-ai
 # or: make docker-up
 ```
+
+See docs/ for module notes.
